@@ -67,7 +67,7 @@ const students = {
         { rollNumber: '309121', name: 'SAAGAR ALI', cast: 'SAHITO', district: 'SHAHEED BENAZIRABAD', group: 'PRR-ENGINEERING', result: 'FAIL', grade: '___' },
         
         /* SANGHAR */
-        { rollNumber: '329890', name: 'ABDUL REHMAN', cast: 'KHOSO', district: 'SANGHAR', group: 'PRR-MEDICAL', result: 'PASS', grade: 'A1' },
+        { rollNumber: '329890', name: 'ABDUL REHMAN', cast: 'KHOSO', district: 'SANGHAR', group: 'PRR-ENGINEERING', result: 'PASS', grade: 'A1' },
     ]
 };
 
