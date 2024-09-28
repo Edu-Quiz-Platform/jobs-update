@@ -39,7 +39,7 @@ const students = {
         { rollNumber: '253877', name: 'MUKHTIAR ALI', cast: 'OTHO', district: 'SHAHEED BENAZIRABAD', group: 'PRR-MEDICAL', result: 'RWH/UMEANS', grade: '___' },
         
         /* SANGHAR */
-        { rollNumber: '329890', name: 'ABDUL REHMAN', cast: 'KHOSO', district: 'SANGHAR', group: 'PRR-MEDICAL', result: 'PASS', grade: 'A1' },
+        { rollNumber: '329890', name: 'ABDUL REHMAN', cast: 'KHOSO', district: 'SANGHAR', group: 'PRR-ENGINEERING', result: 'PASS', grade: 'A1' },
         
         /* NAUSHAHRO FEROZE */
         { rollNumber: '294777', name: 'AQSA MUKHTIAR', cast: 'ARAIN', district: 'NAUSHAHRO FEROZE', group: 'PRR-MEDICAL', result: 'PASS', grade:'A1'},
