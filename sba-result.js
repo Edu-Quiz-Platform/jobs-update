@@ -40,6 +40,8 @@ const students = {
     
     engineering: [
         { rollNumber: '309990', name: 'ATTA MUHAMMAD SHAH', cast: 'SHAH', district: 'SHAHEED BENAZIRABAD', group: 'PRR-ENGINEERING', result: 'PASS', grade:'A'},
+
+        { rollNumber: '312976', name: 'HASNAIN SHAIKH', cast: 'SHAIKH', district: 'SHAHEED BENAZIRABAD', group: 'PRR-ENGINEERING', result: 'PASS', grade: 'A' },
         
         { rollNumber: '310003', name: 'RAJA', cast: 'SIYAL', district: 'SHAHEED BENAZIRABAD', group: 'PRR-ENGINEERING', result: 'PASS', grade:'B'},
         
