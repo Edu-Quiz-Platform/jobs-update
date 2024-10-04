@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://edu-quiz-platform.github.io/sbbu/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h2>Computer MCQs Test</h2>
+    </header>
+
+    <!-- Header Border Section -->
+    <div class="header-border"></div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="past-paper.html">Past Paper</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="test-list">
+        <h2>Computer</h2>
+        <button class="show-answer-btn" id="toggleButton" onclick="toggleCorrectAnswers()">Show Correct Answers</button>
+        <a href="quiz-app.html"><button class="show-answer-btn">Online Quiz</button></a>
+        <div id="question-container"></div>
+    </section>
+    
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-btn" onclick="showWhatsAppText()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    <div class="whatsapp-text" id="whatsappText">
+        Contact on WhatsApp for further details
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Edu-Quiz | All Rights Reserved</p>
+    </footer>
+
+    <!-- Additional Footer Links Section -->
+    <section class="footer-links">
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="terms-conditions.html">Terms & Conditions</a>
+        </p>
+
+    <script src="mcq.js"></script>
+    <script src="mcqs-sho.js"></script>
+    <script src="disabled.js"></script>
+</body>
+</html>
