@@ -1,265 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      
-      <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-57V59H65');</script>
-<!-- End Google Tag Manager -->
 
-      <link rel="icon" href="https://edu-quiz-platform.github.io/sbbu/logo.png" type="image/x-icon">
+    <link rel="icon" href="https://edu-quiz-platform.github.io/sbbu/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jobs Update - Under Construction</title>
-  </head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
+    <title>EduQuiz - Under Construction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
       /* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-main {
-  background: #6610f2;
-}
-.container {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-}
-header {
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      main {
+        background: #6610f2;
+      }
+      .container {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 60px;
+      }
+      .nav_logo {
+        padding: 10px 0;
+      }
+      .menu_items {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      /* Hero */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        background: url(https://edu-quiz-platform.github.io/sbbu/bg-dot.png), url(https://edu-quiz-platform.github.io/sbbu/bg-dot.png), url(https://edu-quiz-platform.github.io/sbbu/bg-round.png), url(https://edu-quiz-platform.github.io/sbbu/bg-tree.png);
+        background-position: 10px 10px, bottom 215px right 10px, left 55% top -1%, left 45% bottom -1px;
+        background-repeat: no-repeat;
+      }
+      .curveImg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        pointer-events: none;
+      }
+      .hero .row {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+        padding: 0 60px;
+        gap: 30px;
+        justify-content: space-between;
+      }
+      .hero .row h3,
+      .hero .row p {
+        color: #fff;
+      }
+      .hero .row h3 {
+        font-size: 28px;
+        margin-bottom: 16px;
+      }
+      .hero .column {
+        width: 50%;
+      }
+      .buttons {
+        display: flex;
+        margin-top: 25px;
+        gap: 10px;
+      }
+      .btn {
+        padding: 14px 26px;
+        background: #fff;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .btn:last-child {
+        border: 2px solid #fff;
+        background: transparent;
+        color: #fff;
+      }
+      .btn:last-child:hover {
+        background-color: #fff;
+        color: #333;
+      }
+      .hero_img {
+        width: 100%;
+        z-index: 10;
+        position: relative;
+      }
+      /* Countdown Styles */
+      .countdown {
+        color: #fff;
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      /* Custom Countdown Design */
+      .countdown .days {
+        font-size: 50px;
+        color: #ffcc00; /* Yellow for Days */
+      }
+      .countdown .time {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        width: 100%;
+      }
+      .countdown .time span {
+        font-size: 36px;
+      }
+      #hours {
+        color: #00ffcc; /* Cyan for Hours */
+      }
+      #minutes {
+        color: #ff6699; /* Pink for Minutes */
+      }
+      #seconds {
+        color: #00ff66; /* Light Green for Seconds */
+      }
+      .whatsapp-btn {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-.nav {
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 60px;
-}
-.nav_logo {
-  padding: 10px 0;
-}
-.menu_items {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-a {
-  color: #fff;
-  text-decoration: none;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: background 0.3s ease-in-out;
+  z-index: 1100; /* Ensure the button is above other elements */
 }
 
-/* Hero */
-.hero {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  background: url(https://edu-quiz-platform.github.io/sbbu/bg-dot.png), url(https://edu-quiz-platform.github.io/sbbu/bg-dot.png), url(https://edu-quiz-platform.github.io/sbbu/bg-round.png), url(https://edu-quiz-platform.github.io/sbbu/bg-tree.png);
-  background-position: 10px 10px, bottom 215px right 10px, left 55% top -1%, left 45% bottom -1px;
-  background-repeat: no-repeat;
+.whatsapp-btn:hover {
+  background-color: #128C7E;
 }
-.curveImg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  pointer-events: none;
+
+.whatsapp-btn i {
+  margin-top: 2px;
 }
-.hero .row {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
-  padding: 0 60px;
-  gap: 30px;
-  justify-content: space-between;
-}
-.hero .row h2,
-.hero .row p {
-  color: #fff;
-}
-.hero .row h2 {
-  font-size: 36px;
-  margin-bottom: 16px;
-}
-.hero .column {
-  width: 50%;
-}
-.buttons {
-  display: flex;
-  margin-top: 25px;
-  gap: 10px;
-}
-.btn {
-  padding: 14px 26px;
-  background: #fff;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.btn:last-child {
-  border: 2px solid #fff;
-  background: transparent;
-  color: #fff;
-}
-.btn:last-child:hover {
+
+.whatsapp-text {
+  display: none;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
   background-color: #fff;
   color: #333;
-}
-.hero_img {
-  width: 100%;
-  z-index: 10;
-  position: relative;
-}
-#menu_toggle {
-  display: none;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1100; /* Ensure the text is above other elements */
 }
 
-/* Reponsive */
-@media (width < 860px) {
-  #menu_toggle {
-    display: block;
-  }
-  .nav {
-    padding: 0 20px;
-    background-color: #fff;
-  }
 
-  .menu_items {
-    position: fixed;
-    top: 0;
-    width: 260px;
-    background-color: #fff;
-    height: 100%;
-    left: -100%;
-    padding: 50px 30px 30px;
-    flex-direction: column;
-    transition: all 0.5s ease;
-  }
-  .showMenu .menu_items {
-    left: 0;
-  }
-  a {
-    color: #333;
-  }
-  #menu_toggle {
-    width: 20px;
-    cursor: pointer;
-  }
-  .menu_items #menu_toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  .hero {
-    padding-top: 130px;
-  }
-  .hero .row {
-    flex-direction: column;
-    padding: 0 20px;
-    justify-content: center;
-  }
-  .hero .row .column {
-    width: 100%;
-  }
-}
-
-@media (width < 600px) {
-  .hero {
-    padding-top: 80px;
-  }
-  .hero .row h2 {
-    font-size: 26px;
-  }
-  .buttons {
-    justify-content: center;
-  }
-  .btn {
-    padding: 10px 16px;
-  }
-}
-/* Your existing styles here */
-        .whatsapp-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            font-size: 2rem;
-            transition: background 0.3s ease-in-out;
+      @media (width < 860px) {
+        .hero .row {
+          flex-direction: column;
+          padding: 0 20px;
+          justify-content: center;
         }
-
-        .whatsapp-btn:hover {
-            background-color: #128C7E;
+        .hero .row .column {
+          width: 100%;
         }
-
-        .whatsapp-btn i {
-            margin-top: 2px;
-        }
-
-        .whatsapp-text {
-            display: none;
-            position: fixed;
-            bottom: 90px;
-            right: 20px;
-            background-color: #fff;
-            color: #333;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        : 10px;
-            box-shadow: 0 4px 10, 0, 0, 0.2);
-        }
-        
-  </style>
+      }
+    </style>
+  </head>
   <body>
-      
-      <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57V59H65"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
     <main>
-      <!-- Header Start -->
-      
-      <!-- Header End -->
-
-      <!-- Hero Start -->
       <section class="hero">
         <div class="row container">
           <div class="column">
-            <h2>Website Under Construction</h2>
-
-            <p>Welcome to EQP - Jobs Update! We are currently working hard to build a fantastic new site just for you. Our pages are being designed to offer the best experience and information.
+            <h3>Website Under Construction</h3>
+<p>Welcome to Edu-Quiz! We are currently working hard to build a fantastic new site just for you. Our pages are being designed to offer the best experience and information. 
 
 Please check back soon to explore our full range of content and features. We appreciate your patience and look forward to sharing our exciting updates with you!
 
-<br>Thank you for visiting!</p>
-            <div class="buttons">
-                <p>Contact us on WhatsApp</p>
-              <!-- <button class="btn">Read More</button> -->
-              <!-- <button class="btn">Contact Us</button> -->
+<br><br>In the meantime, please wait for our upcoming update. In just a few days, our new site will be live, and you’ll be able to access job updates, educational resources, and much more right here. We are actively working on improving this website to provide you with the best possible experience.</p>
+
+            <div class="countdown">
+              <div class="days"><span id="days"></span> Days</div>
+              <div class="time">
+                <span id="hours"></span> Hours
+                <span id="minutes"></span> Minutes
+                <span id="seconds"></span> Seconds
+              </div>
             </div>
+            <p>Our website will be updated on 1st January 2025, Insha'Allah. Please stay tuned for exciting new features and content!</p>
           </div>
           <div class="column">
             <img src="https://edu-quiz-platform.github.io/sbbu/hero.png" alt="heroImg" class="hero_img" />
@@ -268,15 +223,44 @@ Please check back soon to explore our full range of content and features. We app
         <img src="https://edu-quiz-platform.github.io/sbbu/bg-bottom-hero.png" alt="" class="curveImg" />
       </section>
       <!-- WhatsApp Button -->
-    <div class="whatsapp-btn" onclick="showWhatsAppText()">
+      <div class="whatsapp-btn" onclick="showWhatsAppText()">
         <i class="fab fa-whatsapp"></i>
-    </div>
-    <div class="whatsapp-text" id="whatsappText">
-        Contact on WhatsApp for further details
-    </div>
-      <!-- Hero End-->
+      </div>
+      <div class="whatsapp-text" id="whatsappText">Contact on WhatsApp for further details</div>
     </main>
-  </body>
-  <script src="https://edu-quiz-platform.github.io/sbbu/script.js"></script>
+    <script>
+      // Countdown Timer
+      const countdownDate = new Date("January 01, 2025 08:00:00").getTime();
+      const countdownInterval = setInterval(function() {
+        const now = new Date().getTime();
+        const timeLeft = countdownDate - now;
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        if (timeLeft < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById("days").innerHTML = "0";
+          document.getElementById("hours").innerHTML = "0";
+          document.getElementById("minutes").innerHTML = "0";
+          document.getElementById("seconds").innerHTML = "0";
+        }
+      }, 1000);
+
+      // WhatsApp Button Functionality
+      function showWhatsAppText() {
+        const text = document.getElementById("whatsappText");
+        text.style.display = text.style.display === "block" ? "none" : "block";
+      }
+    </script>
+    <script src="https://edu-quiz-platform.github.io/sbbu/script.js"></script>
   <script src="https://edu-quiz-platform.github.io/sbbu/disabled.js"></script>
+  </body>
 </html>
