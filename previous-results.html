@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Previous Results</h1>
+    </header>
+    <section id="previous-results-section">
+        <h2>Select a User to View Result</h2>
+        <select id="results-dropdown" onchange="displayResultDetails()">
+            <option value="">Select a User</option>
+            <!-- User names will be populated here -->
+        </select>
+        <div id="result-details-dropdown"></div>
+    </section>
+
+    <script src="previous-results.js"></script>
+</body>
+</html>

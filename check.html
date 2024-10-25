@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-Quiz-Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Edu-Quiz-Platform</h1>
+        <nav>
+            <a href="previous-results.html">View Previous Results</a>
+        </nav>
+    </header>
+
+    <section id="quiz-container">
+        <label for="username">Enter your name:</label>
+        <input type="text" id="username" placeholder="Enter your name">
+        <button onclick="startQuiz()">Start Quiz</button>
+        <div id="question-container" style="display: none;">
+            <!-- MCQs dynamically added here by JavaScript -->
+        </div>
+        <button id="submit-btn" style="display: none;" onclick="submitQuiz()">Submit Quiz</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
