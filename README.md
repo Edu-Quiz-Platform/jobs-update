@@ -1,9 +1,14 @@
-# My PHP Project
-
-This is a simple PHP project.
-
-## How to Run
-
-1. Download the repository:
-   ```bash
-   git clone https://github.com/Edu-Quiz-Platform/jobs-update.git
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to Your Platform</h1>
+    <p>This is the homepage.</p>
+    
+    <?php include 'footer.php'; ?>
+</body>
+</html>
